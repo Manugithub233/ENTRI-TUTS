@@ -4,19 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
+body{
 
+background-color: #1877f2;
+
+}
 
 
 
 .tbcontainer{
 
   margin: auto;
-  width: 50%;
-  border: 3px solid #73AD21;
+  width: 40%;
+  border: 3px solid black;
   padding: 10px;
-  background-color: aliceblue;
+  background-color: white;
   overflow : hidden;
   border-radius: 15px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.226);
 
 }
 
@@ -25,7 +30,7 @@
 
 text-align: center;
 border-radius: 3px;
-border: 2px green solid;
+border: 2px #1877f2 solid;
 padding: 8px;
 margin:auto;
 
@@ -37,18 +42,18 @@ margin:auto;
 table tr td{
 
 padding: 10px;    
-text-align: center;
+
 
 
 
 }
 
 #sl1{
-    text-align: center;
+text-align: center;
 border-radius: 3px;
-border: 2px green solid;
+border: 2px #1877f2 solid;
 padding: 8px;
-margin:auto;
+
 
 
 
@@ -65,10 +70,11 @@ margin:auto;
 padding: 6px;
 width: 100px;
 color: white;
-background-color: green;
+background-color: #1877f2;
 cursor: pointer;
 box-shadow: 2px 2px grey;
 border-radius: 5px;
+font-weight: bold;
 }
 
 #rst
@@ -76,12 +82,39 @@ border-radius: 5px;
 padding: 6px;
 width: 100px;
 color: white;
-background-color: green;
+background-color: #1876f2;
 cursor: pointer;
 box-shadow: 2px 2px grey;
 border-radius: 5px ;
+font-weight: bold;
+
 
 }
+
+input[type = "text"]
+{
+color: black;
+font-size: 0.8EM;
+font-weight: bold;
+display: flex;
+margin: auto;
+text-align: center;
+
+}
+
+input[type = "date"]{
+
+padding: 8px;
+font-weight: bold;
+
+}
+
+td #rst{
+ float: right;
+
+
+}
+
 
 </style>
 
@@ -100,17 +133,17 @@ border-radius: 5px ;
 
 <tr>
 <td><Label id="c1">Full name</Label>
-<input type="text"  id="n1" placeholder="Enter Your Full Name" size="30">
+<input type="text"  id="n1" placeholder="Enter Your Full Name" size="30" required>
 </td>
 <td><Label id="c1">Father's name</Label>
-<input type="text"  id="n1" placeholder="Enter Your Father Name" size="30">
+<input type="text"  id="n1" placeholder="Enter Your Father Name" size="30" required>
 </td>
 
 </tr>
 
 <tr>
 <td><label id="c1">Mother's Name</label>
-<input type="text"  id="n1" placeholder="Enter Your Mother's Name" size = "30">
+<input type="text"  id="n1" placeholder="Enter Your Mother's Name" size = "30" required>
 </td>
 <td>
 <label id="c1">DOB</label>
@@ -131,7 +164,7 @@ border-radius: 5px ;
     
     </td>
 <td><label id ="c1">Aadhar Id</label>
-<input type="text"  id="n1" placeholder="Enter your aadhar number" size="30">
+<input type="text"  id="n1" placeholder="Enter your aadhar number" size="30" required >
 
 </td>        
 
